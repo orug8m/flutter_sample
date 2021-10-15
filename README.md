@@ -39,3 +39,16 @@ $ sdkmanager sdkmanager --install "cmdline-tools;latest"
 $ flutter doctor
 # => Good when all green
 ```
+
+gpg
+
+```
+# commitできなくなった
+error: gpg failed to sign the data
+fatal: failed to write commit object
+```
+
+```
+$ gpgconf --kill gpg-agent
+# このあと回復
+```
