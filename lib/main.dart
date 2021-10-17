@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final wordPair = WordPair.random();
     return MaterialApp(
-      title: 'Startup Name Genator',
+      title: 'Startup Name Genarator(not used?)',
       home: RandomWords(),
     );
   }
@@ -52,9 +52,14 @@ class _RandomWordsState extends State<RandomWords> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Startup Name Generator'),
+        title: const Text('Startup Name Generator',
+            style: TextStyle(color: Colors.black)),
+        backgroundColor: Colors.white,
         actions: [
-          IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
+          IconButton(
+              icon: Icon(Icons.list),
+              color: Colors.black,
+              onPressed: _pushSaved),
         ],
       ),
       body: _buildSuggestions(),
